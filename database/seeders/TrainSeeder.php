@@ -21,8 +21,8 @@ class TrainSeeder extends Seeder
             $newTrain->azienda = $faker->company();
             $newTrain->stazione_di_partenza = $faker->city();
             $newTrain->stazione_di_arrivo = $faker->city();
-            $newTrain->orario_di_partenza = $faker->dateTimeBetween(date('Y') . '-01-01', date('Y') + 5 . '-12-31');
-            $newTrain->orario_di_arrivo = $faker->dateTimeBetween(date('Y') . '-01-01', date('Y') + 5 . '-12-31');
+            $newTrain->orario_di_partenza = $faker->dateTimeBetween(date('Y') . '-01-01', date('Y') . '-12-31');
+            $newTrain->orario_di_arrivo = $faker->dateTimeBetween($newTrain->orario_di_partenza, date('Y') . '-12-31');
             $newTrain->codice_treno = $faker->bothify('??##?#?#');
             $newTrain->numero_carrozze = $faker->numberBetween(1, 20);
             $newTrain->in_orario = $faker->boolean();
