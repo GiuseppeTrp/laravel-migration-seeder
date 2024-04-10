@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container py-5 bg-success">
-    <h1 class="text-danger">Lista</h1>
+    <h1 class="text-danger">Lista yeh</h1>
 
     
    
