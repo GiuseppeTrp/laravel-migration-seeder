@@ -12,10 +12,10 @@ class PageController extends Controller
 
     public function index() {
 
-       
+        $trains = Train::all();
 
 
-        return view('homepage');
+        return view('homepage',compact('trains'));
     }
 
 }
